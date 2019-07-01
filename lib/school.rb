@@ -25,7 +25,7 @@ class School
   
   def sort(name)
     self.roster.select do |grade, name|
-    grade
+    grade == 10 
   end
   end
   
