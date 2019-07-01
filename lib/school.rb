@@ -23,10 +23,12 @@ class School
     @roster[grade]
   end
   
-  def sort(name)
-    self.roster.select do |grade, name|
-    grade == 10 
+  def sort
+    new_hash = {}
+    self.roster.each do |grade, name|
+      new_hash[grade] = name.sort
   end
+  new_hash
   end
   
 end 
